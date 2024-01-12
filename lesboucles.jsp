@@ -37,6 +37,7 @@
     <% for (int y = 1; y <= cpt; y++) { %>
        <%= "*" %>
     <% } %>
+    <br>
 <% } %>
 </p>
 
@@ -44,11 +45,33 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*</br>**</br>***</br>****</br>*****</p>
+<br>
+<%-- Boucle for pour afficher un triangle rectangle gauche --%>
+<p>Résultat pour </p><%= valeur %>
+<p>
+<% for (int x = 1; x <= cpt; x++) { %>
+    <% for (int y = 1; y <= x; y++) { %>
+       <%= "*" %>
+    <% } %>
+    <br>
+<% } %>
+</p>
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
+<br>
+<%-- Boucle for pour afficher un triangle rectangle inversé --%>
+<p>Résultat pour </p><%= valeur %>
+<p>
+<% for (int x = 1; x <= cpt; x++) { %>
+    <% for (int y = cpt; y >= x; y--) { %>
+       <%= "*" %>
+    <% } %>
+    <br>
+<% } %>
+</p>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
