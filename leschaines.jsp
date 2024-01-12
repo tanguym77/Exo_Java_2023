@@ -111,7 +111,7 @@ xueivulp ares revih'l</p>
     int consonnes = 0;
 
     for (int i = 0; i < chaine.length(); i++) {
-        char lettre = phrase.charAt(i);
+        char lettre = chaine.charAt(i);
 
         if (lettre == 'a' || lettre == 'e' || lettre == 'i' || lettre == 'o' || lettre == 'u' || lettre == 'y') {
             voyelles++;
