@@ -12,7 +12,7 @@
 <%-- Récupération des valeurs --%>
     <% String chaine = request.getParameter("chaine"); %>
     
-    <% if (chaine != null) { %>
+<% if (chaine != null) { %>
 
     <%-- Obtention de la longueur de la chaîne --%>
     <% int longueurChaine = chaine.length(); %>
@@ -22,14 +22,12 @@
     <% char caractereExtrait = chaine.charAt(2); %>
     <p>Le 3° caractère de votre chaine est la lettre <%= caractereExtrait %></p>
 
-    <%-- Obtention d'une sous-chaîne --%>
-    <% String sousChaine = chaine.substring(2, 6); %>
-    <p>Une sous chaine de votre texte : <%= sousChaine %> </p>
-
     <%-- Recharche de la lettre "e" --%>
     <% char recherche = 'e'; 
        int position = chaine.indexOf(recherche); %>
     <p>Votre premier "e" est en : <%= position %></p>
+
+<% } %>
 
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
@@ -82,7 +80,6 @@ xueivulp ares revih'l</p>
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
 
-<% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
