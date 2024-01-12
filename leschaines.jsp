@@ -70,8 +70,7 @@ pluvieux</p>
 <p>Résultats</p>
 <%
     for (int i = 0; i < chaine.length(); i++) {
-        char lettre = chaine.charAt(i);
-        if (lettre != ' ' ) {
+        if (chaine.charAt(i) != ' ' ) {
             out.println(chaine.charAt(i));
         }else{
             out.println("<br>");
@@ -83,6 +82,13 @@ pluvieux</p>
 <p>Ecrire le programme pour afficher seulement une lettre sur deux de votre texte </br>
 Exemple : L'hiver sera pluvieux</br>
 Lhvrsr lvex</p>
+
+<p>Résultats</p>
+<%
+    for (int i = 0; i < chaine.length(); i=i+2) {
+        out.println(chaine.charAt(i));
+    }
+%>
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
