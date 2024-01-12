@@ -38,8 +38,11 @@
 <p>Résultats</p>
 <%
     int nb_e = 0;
-    for (int i = 1; i <= longueurChaine; i++) {
-        out.println(chaine.charAt(i));
+    for (int i = 0; i <= longueurChaine; i++) {
+        char lettre = chaine.charAt(i);
+        if(lettre == 'e' || lettre == 'E') {
+            nb_e++;
+        }
     }
     out.println(nb_e);
 %>
