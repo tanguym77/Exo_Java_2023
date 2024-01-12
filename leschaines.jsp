@@ -23,20 +23,22 @@
     <p>Le 3° caractère de votre chaine est la lettre <%= caractereExtrait %></p>
 
     <%-- Obtention d'une sous-chaîne --%>
-    <%-- String sousChaine = chaine.substring(2, 6); --%>
-    <!-- <p>Une sous chaine de votre texte : <%-- sousChaine --%></p> -->
+    <% String sousChaine = chaine.substring(2, 6); %>
+    <p>Une sous chaine de votre texte : <%= sousChaine %> </p>
 
     <%-- Recharche de la lettre "e" --%>
     <% char recherche = 'e'; 
        int position = chaine.indexOf(recherche); %>
     <p>Votre premier "e" est en : <%= position %></p>
 
+    <% } %>
     
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
 <p>Résultats</p>
 <%
+if (chaine != null) {
     int nb_e = 0;
     for (int i = 0; i <= longueurChaine; i++) {
         char lettre = chaine.charAt(i);
@@ -45,6 +47,7 @@
         }
     }
     out.println(nb_e);
+}
 %>
 
 <h2>Exercice 2 : Affichage verticale</h2>
