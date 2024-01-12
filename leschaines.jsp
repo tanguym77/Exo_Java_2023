@@ -58,7 +58,11 @@ u</br>
 r</p>
 
 <p>Résultats</p>
-
+if (chaine != null) {
+    for (int i = 0; i < chaine.length(); i++) {
+        out.println(chaine.charAt(i));        
+    }
+}
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
