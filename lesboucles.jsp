@@ -31,7 +31,7 @@
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 <br>
 <%-- Boucle for pour afficher un carré d'étoiles --%>
-<p>Résultat pour </p><%= valeur %>
+<p>Résultat pour <%= valeur %> </p>
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = 1; y <= cpt; y++) { %>
@@ -47,7 +47,7 @@
 <p>*</br>**</br>***</br>****</br>*****</p>
 <br>
 <%-- Boucle for pour afficher un triangle rectangle gauche --%>
-<p>Résultat pour </p><%= valeur %>
+<p>Résultat pour <%= valeur %> </p>
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = 1; y <= x; y++) { %>
@@ -63,7 +63,7 @@
 <p>*****</br>****</br>***</br>**</br>*</p>
 <br>
 <%-- Boucle for pour afficher un triangle rectangle inversé --%>
-<p>Résultat pour </p><%= valeur %>
+<p>Résultat pour <%= valeur %> </p>
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
@@ -77,6 +77,20 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
+<br>
+<%-- Boucle for pour afficher un triangle rectangle droite --%>
+<p>Résultat pour <%= valeur %> </p>
+<p>
+<% for (int x = 1; x <= cpt; x++) { %>
+    <% for (int y = cpt; y >= x; y--) { %>
+       <%= " " %>
+    <% } %>
+    <% for (int y = 1; y <= x; y++) { %>
+       <%= "*" %>
+    <% } %>
+    <br>
+<% } %>
+</p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
