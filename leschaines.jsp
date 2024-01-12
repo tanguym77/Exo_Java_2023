@@ -27,20 +27,16 @@
        int position = chaine.indexOf(recherche); %>
     <p>Votre premier "e" est en : <%= position %></p>
 
-<% } %>
-
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
 <p>Résultats</p>
 <%
     int nb_e = 0;
-    if (chaine != null) {
-        for (int i = 0; i < chaine.length(); i++) {
-            char lettre = chaine.charAt(i);
-            if (lettre == 'e' || lettre == 'E') {
-                nb_e++;
-            }
+    for (int i = 0; i < chaine.length(); i++) {
+        char lettre = chaine.charAt(i);
+        if (lettre == 'e' || lettre == 'E') {
+            nb_e++;
         }
     }
     out.println(nb_e);
@@ -59,11 +55,9 @@ r</p>
 
 <p>Résultats</p>
 <%
-if (chaine != null) {
     for (int i = 0; i < chaine.length(); i++) {
         out.println(chaine.charAt(i)+"<br>");        
     }
-}
 %>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
@@ -87,16 +81,15 @@ xueivulp ares revih'l</p>
 
 <p>Résultats</p>
 <%
-if (chaine != null) {
     for (int i = chaine.length()-1; i >= 0; i--) {
         out.println(chaine.charAt(i));        
     }
-}
 %>
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
 
+<% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
