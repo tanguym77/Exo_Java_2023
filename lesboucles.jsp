@@ -33,12 +33,12 @@
 <%-- Boucle for pour afficher un carré d'étoiles --%>
 <p>Résultat pour <%= valeur %> </p>
 
-<% for (int x = 1; x <= cpt; x++) { %>
-    <% for (int y = 1; y <= cpt; y++) { %>
-       out.print("*");
-    <% } %>
-    <br>
-<% } %>
+<% for (int x = 1; x <= cpt; x++) {
+       for (int y = 1; y <= cpt; y++) {
+            out.print("*");
+        }
+    out.println("<br>");
+ } %>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
@@ -48,12 +48,12 @@
 <%-- Boucle for pour afficher un triangle rectangle gauche --%>
 <p>Résultat pour <%= valeur %> </p>
 <p>
-<% for (int x = 1; x <= cpt; x++) { %>
-    <% for (int y = 1; y <= x; y++) { %>
-       out.print("*");
-    <% } %>
-    <br>
-<% } %>
+<% for (int x = 1; x <= cpt; x++) { 
+       for (int y = 1; y <= x; y++) { 
+           out.print("*");
+        }
+    out.println("<br>");
+} %>
 </p>
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
@@ -64,12 +64,12 @@
 <%-- Boucle for pour afficher un triangle rectangle inversé --%>
 <p>Résultat pour <%= valeur %> </p>
 <p>
-<% for (int x = 1; x <= cpt; x++) { %>
-    <% for (int y = cpt; y >= x; y--) { %>
+<% for (int x = 1; x <= cpt; x++) {
+    for (int y = cpt; y >= x; y--) {
        out.print("*");
-    <% } %>
-    <br>
-<% } %>
+    }
+    out.println("<br>");
+} %>
 </p>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
@@ -80,15 +80,15 @@
 <%-- Boucle for pour afficher un triangle rectangle droite --%>
 <p>Résultat pour <%= valeur %> </p>
 <p>
-<% for (int x = 1; x <= cpt; x++) { %>
-    <% for (int y = cpt; y >= x; y--) { %>
+<% for (int x = 1; x <= cpt; x++) {
+    for (int y = cpt; y >= x; y--) {
        out.print("&nbsp");
-    <% } %>
-    <% for (int y = 1; y <= x; y++) { %>
+    }
+    for (int y = 1; y <= x; y++) {
        out.print("*");
-    <% } %>
-    <br>
-<% } %>
+    }
+    out.println("<br>");
+} %>
 </p>
 
 <h2>Exercice 5 : Triangle isocele</h2>
@@ -99,15 +99,15 @@
 <%-- Boucle for pour afficher un triangle isocele --%>
 <p>Résultat pour <%= valeur %> </p>
 <p>
-<% for (int x = 1; x <= cpt; x++) { %>
-    <% for (int y = cpt; y >= x; y--) { %>
+<% for (int x = 1; x <= cpt; x++) {
+    for (int y = cpt; y >= x; y--) {
        out.print("&nbsp");
-    <% } %>
-    <% for (int y = 1; y <= x; y++) { %>
+    }
+    for (int y = 1; y <= x; y++) {
        out.print("*");
-    <% } %>
-    <br>
-<% } %>
+    }
+    out.println("<br>");
+} %>
 </p>
 
 <h2>Exercice 6 : Le demi losange</h2>
