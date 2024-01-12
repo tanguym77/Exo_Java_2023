@@ -83,7 +83,7 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
-       <%= " " %>
+       <%= "&nbsp" %>
     <% } %>
     <% for (int y = 1; y <= x; y++) { %>
        <%= "*" %>
