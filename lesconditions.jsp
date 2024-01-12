@@ -42,9 +42,9 @@ B = 20</br>
 C = 15</br>
 Oui C est compris entre A et B</p>
 
-<p>Résultat pour <%= valeur1 valeur2 valeur3 %> </p>
+<p>Résultats</p>
 <%
-    if(valeur3>valeur1 && valeur3<valeur2){
+    if(valeur3>=valeur1 && valeur3<=valeur2){
         out.println("C est entre A et B");
     }else{
         out.println("C n'est pas entre A et B");
