@@ -108,23 +108,22 @@ xueivulp ares revih'l</p>
 <p>Résultats</p>
 <%
     int voyelles = 0;
-        int consonnes = 0;
+    int consonnes = 0;
 
-        for (int i = 0; i < chaine.length(); i++) {
-            char lettre = phrase.charAt(i);
+    for (int i = 0; i < chaine.length(); i++) {
+        char lettre = phrase.charAt(i);
 
-            // Vérifier si le caractère est une voyelle
-            if (lettre == 'a' || lettre == 'e' || lettre == 'i' || lettre == 'o' || lettre == 'u' || lettre == 'y') {
-                voyelles++;
-            } else if (lettre == ' ') {
-                break;
-            }else{
-                consonnes++;
-            }
+        if (lettre == 'a' || lettre == 'e' || lettre == 'i' || lettre == 'o' || lettre == 'u' || lettre == 'y') {
+            voyelles++;
+        } else if (lettre == ' ') {
+            break;
+        }else{
+            consonnes++;
         }
+    }
 
-        System.out.println("Nombre de voyelles : " + voyelles);
-        System.out.println("Nombre de consonnes : " + consonnes);
+    System.out.println("Nombre de voyelles : " + voyelles);
+    System.out.println("Nombre de consonnes : " + consonnes);
 %>
 
 <% } %>
