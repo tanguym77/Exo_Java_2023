@@ -31,8 +31,6 @@
        int position = chaine.indexOf(recherche); %>
     <p>Votre premier "e" est en : <%= position %></p>
 
-    <% } %>
-    
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 
@@ -40,7 +38,7 @@
 <%
 if (chaine != null) {
     int nb_e = 0;
-    for (int i = 0; i <= longueurChaine; i++) {
+    for (int i = 0; i <= chaine.length(); i++) {
         char lettre = chaine.charAt(i);
         if(lettre == 'e' || lettre == 'E') {
             nb_e++;
