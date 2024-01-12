@@ -38,10 +38,8 @@
 <p>Résultats</p>
 <%
     int nb_e = 0;
-    for(int i=0;i<=longueurChaine;i++){
-        out.println(chaine.charAt(i));
-    }
-    out.println(nb_e);
+    out.println(chaine.charAt(1));
+    out.println(longueurChaine);
 %>
 
 <h2>Exercice 2 : Affichage verticale</h2>
@@ -56,11 +54,7 @@ u</br>
 r</p>
 
 <p>Résultats</p>
-<%
-    for(int i=0;i<=longueurChaine;i++){
-        out.println(chaine.charAt(i));
-    }
-%>
+
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
