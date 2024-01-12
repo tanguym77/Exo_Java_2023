@@ -37,11 +37,9 @@
 
 <p>Résultats</p>
 <%
-int nb_e = 0;
+    int nb_e = 0;
     for(int i=0;i<=longueurChaine;i++){
-        if(chaine.charAt(i)==recherche){
-            nb_e+=1;
-        }
+        out.println(chaine.charAt(i));
     }
     out.println(nb_e);
 %>
