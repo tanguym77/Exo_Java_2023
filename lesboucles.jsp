@@ -21,7 +21,7 @@
     <%int cpt = Integer.parseInt(valeur); %>
     <p>
     <% for (int i = 1; i <= cpt; i++) { %>
-       <%= "*" %>
+        out.print("*");
     <% } %>
     </p>
 
@@ -35,7 +35,7 @@
 
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = 1; y <= cpt; y++) { %>
-       <%= "*" %>
+       out.print("*");
     <% } %>
     <br>
 <% } %>
@@ -50,7 +50,7 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = 1; y <= x; y++) { %>
-       <%= "*" %>
+       out.print("*");
     <% } %>
     <br>
 <% } %>
@@ -66,7 +66,7 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
-       <%= "*" %>
+       out.print("*");
     <% } %>
     <br>
 <% } %>
@@ -82,10 +82,10 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
-       <%= "0" %>
+       out.print(" ");
     <% } %>
     <% for (int y = 1; y <= x; y++) { %>
-       <%= "*" %>
+       out.print("*");
     <% } %>
     <br>
 <% } %>
@@ -101,10 +101,10 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
-       <%= "&nbsp" %>
+       <%= out.print("&nbsp"); %>
     <% } %>
     <% for (int y = 1; y <= x; y++) { %>
-       <%= "*" %>
+       out.print("*");
     <% } %>
     <br>
 <% } %>
