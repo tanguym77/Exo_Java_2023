@@ -33,10 +33,8 @@
 <%-- Boucle for pour afficher un carré d'étoiles --%>
 <%int cpt = Integer.parseInt(valeur); %>
 <p>
-<% for (int x = 1; x <= cpt; i++) { %>
-    <% for (int y = 1; y <= cpt; y++) { %>
-        <%= "*" %>
-    <% } %>
+<% for (int i = 1; i <= cpt; i++) { %>
+   <%= "*" %>
 <% } %>
 </p>
 
