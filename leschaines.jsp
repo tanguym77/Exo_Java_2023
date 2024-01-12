@@ -74,7 +74,7 @@ pluvieux</p>
         if (lettre != ' ' ) {
             out.println(chaine.charAt(i));
         }else{
-            out.println("<br>")
+            out.println("<br>");
         }
     }
 %>
