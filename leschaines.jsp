@@ -34,16 +34,16 @@
 
 <p>Résultats</p>
 <%
-if (chaine != null) {
     int nb_e = 0;
-    for (int i = 0; i <= chaine.length(); i++) {
-        char lettre = chaine.charAt(i);
-        if(lettre == 'e' || lettre == 'E') {
-            nb_e++;
+    if (chaine != null) {
+        for (int i = 0; i < chaine.length(); i++) {
+            char lettre = chaine.charAt(i);
+            if (lettre == 'e' || lettre == 'E') {
+                nb_e++;
+            }
         }
     }
     out.println(nb_e);
-}
 %>
 
 <h2>Exercice 2 : Affichage verticale</h2>
