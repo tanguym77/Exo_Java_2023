@@ -83,7 +83,7 @@
 <p>
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = cpt; y >= x; y--) { %>
-       <%= "&nbsp" %>
+       <%= "0" %>
     <% } %>
     <% for (int y = 1; y <= x; y++) { %>
        <%= "*" %>
@@ -96,7 +96,20 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
-
+<br>
+<%-- Boucle for pour afficher un triangle isocele --%>
+<p>Résultat pour <%= valeur %> </p>
+<p>
+<% for (int x = 1; x <= cpt; x++) { %>
+    <% for (int y = cpt; y >= x; y--) { %>
+       <%= "&nbsp" %>
+    <% } %>
+    <% for (int y = 1; y <= x; y++) { %>
+       <%= "*" %>
+    <% } %>
+    <br>
+<% } %>
+</p>
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
