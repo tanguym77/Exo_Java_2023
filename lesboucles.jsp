@@ -110,6 +110,7 @@
     <br>
 <% } %>
 </p>
+
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
@@ -124,6 +125,15 @@
 <p>5 x 3 = 15</p>
 <p>5 x 4 = 20</p>
 <p>5 x 5 = 25</p>
+<br>
+<%-- Boucle for pour afficher la table de multiplication --%>
+<p>Résultat pour <%= valeur %> </p>
+<p>
+<% for (int x = 1; x <= cpt; x++) { %>
+    <%= cpt + " x " + x + " = " + (cpt*x) %>
+    <br>
+<% } %>
+</p>
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
