@@ -32,14 +32,13 @@
 <br>
 <%-- Boucle for pour afficher un carré d'étoiles --%>
 <p>Résultat pour <%= valeur %> </p>
-<p>
+
 <% for (int x = 1; x <= cpt; x++) { %>
     <% for (int y = 1; y <= cpt; y++) { %>
        <%= "*" %>
     <% } %>
     <br>
 <% } %>
-</p>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
