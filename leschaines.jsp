@@ -40,7 +40,7 @@
 int nb_e = 0;
     for(int i=0;i<=longueurChaine;i++){
         if(chaine.charAt(i)==recherche){
-            nb_e+=1
+            nb_e+=1;
         }
     }
     out.println(nb_e);
