@@ -38,8 +38,10 @@
 <p>Résultats</p>
 <%
     int nb_e = 0;
-    out.println(chaine.charAt(1));
-    out.println(longueurChaine);
+    for (int i = 1; i <= longueurChaine; i++) {
+        out.println(chaine.charAt(i));
+    }
+    out.println(nb_e);
 %>
 
 <h2>Exercice 2 : Affichage verticale</h2>
