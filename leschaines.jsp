@@ -58,11 +58,13 @@ u</br>
 r</p>
 
 <p>Résultats</p>
+<%
 if (chaine != null) {
     for (int i = 0; i < chaine.length(); i++) {
         out.println(chaine.charAt(i));        
     }
 }
+%>
 
 <h2>Exercice 3 : Retour à la ligne</h2>
 <p>La présence d'un espace provoque un retour à la ligne </br>
@@ -80,6 +82,15 @@ Lhvrsr lvex</p>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
 Exemple : L'hiver sera pluvieux</br>
 xueivulp ares revih'l</p>
+
+<p>Résultats</p>
+<%
+if (chaine != null) {
+    for (int i = chaine.length(); i > 0; i--) {
+        out.println(chaine.charAt(i));        
+    }
+}
+%>
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
