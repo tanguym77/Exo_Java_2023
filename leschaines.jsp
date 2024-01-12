@@ -115,9 +115,7 @@ xueivulp ares revih'l</p>
 
         if (lettre == 'a' || lettre == 'e' || lettre == 'i' || lettre == 'o' || lettre == 'u' || lettre == 'y') {
             voyelles++;
-        } else if (lettre == ' ') {
-            break;
-        }else{
+        } else if (lettre !== ' ') {
             consonnes++;
         }
     }
