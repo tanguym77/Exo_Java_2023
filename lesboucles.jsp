@@ -31,7 +31,6 @@
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 <br>
 <%-- Boucle for pour afficher un carré d'étoiles --%>
-<%int cpt = Integer.parseInt(valeur); %>
 <p>
 <% for (int i = 1; i <= cpt; i++) { %>
    <%= "*" %>
