@@ -31,9 +31,12 @@
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 <br>
 <%-- Boucle for pour afficher un carré d'étoiles --%>
+<p>Résultat pour </p><%= valeur %>
 <p>
 <% for (int i = 1; i <= cpt; i++) { %>
-   <%= "*" %>
+    <% for (int i = 1; i <= cpt; i++) { %>
+       <%= "*" %>
+    <% } %>
 <% } %>
 </p>
 
