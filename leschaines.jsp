@@ -122,8 +122,8 @@ xueivulp ares revih'l</p>
         }
     }
 
-    System.out.println("Nombre de voyelles : " + voyelles);
-    System.out.println("Nombre de consonnes : " + consonnes);
+    out.println("Nombre de voyelles : " + voyelles);
+    out.println("Nombre de consonnes : " + consonnes);
 %>
 
 <% } %>
